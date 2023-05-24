@@ -1,0 +1,148 @@
+.page__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    justify-content: space-between;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.page__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.page__header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.page__header-logo-img {
+    height: 50px;
+    width: 50px;
+}
+
+.page__header-logo-texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.page__header-logo-texts-main {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.page__header-logo-texts-second {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.page__header-contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+.page__header-contacts-contact {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.page__main-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px 60px;
+}
+
+.page__main-section-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.page__main-section-card:hover {
+    cursor: pointer;
+}
+
+.page__main-section-card:hover .page__main-section-card-name {
+    color: #f26522;
+}
+
+.page__main-section-card:hover .page__main-section-card-details {
+    transform: translateY(0);
+}
+
+.page__main-section-card:hover .page__main-section-card-content,
+.page__main-section-card:hover .page__main-section-card-img {
+    border-radius: 15px 15px 0 0;
+}
+
+.page__main-section-card-content {
+    position: relative;
+    padding: 3px;
+    height: 100%;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    transition: 300ms;
+    overflow: hidden;
+}
+
+.page__main-section-card-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #f26522;
+    color: #fff;
+    transform: translateY(100%);
+    transition: 300ms;
+}
+
+.page__main-section-card-details-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.page__main-section-card-details-price-text {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.page__main-section-card-details-price-cost {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.page__main-section-card-details-more:after {
+    content: '>';
+    color: #fff;
+}
+
+.page__main-section-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 300ms;
+}
+
+.page__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    color: #fff;
+}
+
+.page__footer-text {
+    font-size: 14px;
+}

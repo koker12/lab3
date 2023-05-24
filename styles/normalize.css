@@ -1,0 +1,20 @@
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.container {
+    max-width: 1065px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: 300ms;
+}
+
+a:hover {
+    color: #f26522;
+}
